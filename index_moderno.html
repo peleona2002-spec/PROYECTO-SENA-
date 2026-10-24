@@ -71,9 +71,8 @@
           <li><a href="#catalogo" class="nav-link-modern">Menú</a></li>
           <li><a href="#personalizador" class="nav-link-modern">Crear Helado ✨</a></li>
           <li><a href="#nosotros" class="nav-link-modern">Nosotros</a></li>
-          <li><a href="#encuesta" class="nav-link-modern">Encuesta DB</a></li>
-          <li><a href="https://iedhernanvenegascarrillo.edu.co/bases2026/proyecto3/pqr3.html" target="_blank" rel="noopener noreferrer" class="nav-link-modern nav-link-pqr">📋 PQR Institucional ↗</a></li>
-          <li><a href="#contacto" class="nav-link-modern">Contacto</a></li>
+          <li><a href="#contacto" class="nav-link-modern">Contacto &amp; Horarios</a></li>
+          <li><a href="#encuesta" class="nav-link-modern nav-link-pqr">📋 Encuesta BD</a></li>
         </ul>
       </nav>
 
@@ -120,8 +119,8 @@
           <a href="#personalizador" class="btn-modern btn-secondary-modern">
             <i class="fas fa-wand-magic-sparkles"></i> Crear mi Helado
           </a>
-          <a href="https://iedhernanvenegascarrillo.edu.co/bases2026/proyecto3/pqr3.html" target="_blank" rel="noopener noreferrer" class="btn-modern btn-pqr-hero">
-            <i class="fas fa-external-link-alt"></i> PQR3 Institucional ↗
+          <a href="#encuesta" class="btn-modern btn-pqr-hero">
+            <i class="fas fa-database"></i> Encuesta BD
           </a>
         </div>
 
@@ -254,15 +253,14 @@
 
           <!-- Paso 2: Sabores -->
           <div class="cust-step-card tilt-3d">
-            <h3 class="cust-step-title"><span style="color:var(--c-pink);">2.</span> Elige Sabores de Helado (hasta 3)</h3>
+            <h3 class="cust-step-title"><span style="color:var(--c-pink);">2.</span> Escoger Sabor de Helado (hasta 3)</h3>
             <div class="cust-pill-group">
-              <label class="cust-pill flavor-pill selected" data-flavor="Chocolate Belga">🍫 Chocolate Belga</label>
-              <label class="cust-pill flavor-pill selected" data-flavor="Vainilla Francesa">🍦 Vainilla Francesa</label>
-              <label class="cust-pill flavor-pill" data-flavor="Fresa Silvestre">🍓 Fresa Silvestre</label>
-              <label class="cust-pill flavor-pill" data-flavor="Arequipe Colombiano">🍯 Arequipe Tradicional</label>
-              <label class="cust-pill flavor-pill" data-flavor="Maracuyá Tropical">🥭 Maracuyá Tropical</label>
-              <label class="cust-pill flavor-pill" data-flavor="Limón con Hierbabuena">🍋 Limón Hierbabuena</label>
-              <label class="cust-pill flavor-pill" data-flavor="Mora Campesina">🫐 Mora Campesina</label>
+              <label class="cust-pill flavor-pill selected" data-flavor="Brownie">🍫 Brownie</label>
+              <label class="cust-pill flavor-pill selected" data-flavor="Vainilla">🍦 Vainilla</label>
+              <label class="cust-pill flavor-pill" data-flavor="Vainilla Chips">🍨 Vainilla Chips</label>
+              <label class="cust-pill flavor-pill" data-flavor="Chocolate">🍫 Chocolate</label>
+              <label class="cust-pill flavor-pill" data-flavor="Mandarina">🍊 Mandarina</label>
+              <label class="cust-pill flavor-pill" data-flavor="Frutos Rojos">🍓 Frutos Rojos</label>
             </div>
           </div>
 
@@ -291,7 +289,7 @@
           <div class="cust-preview-list">
             <div class="cust-preview-row">
               <strong>Sabores:</strong>
-              <span id="previewFlavorsText">Chocolate Belga + Vainilla</span>
+              <span id="previewFlavorsText">Brownie + Vainilla</span>
             </div>
             <div class="cust-preview-row">
               <strong>Toppings:</strong>
@@ -315,32 +313,30 @@
   </section>
 
   <!-- =============================================
-       7. ENCUESTA DE SATISFACCIÓN ESPECIALIZADA PARA HELADERÍA
-       (CON BASE DE DATOS Y REDIRECCIÓN A PQR3.HTML)
+       7. ENCUESTA DE SATISFACCIÓN EN BASE DE DATOS
   ============================================= -->
   <section class="survey-section-modern" id="encuesta">
     <div class="container">
       <div class="section-header-modern">
-        <span class="section-pill">📋 Tu Opinión es Muy Importante</span>
-        <h2 class="section-title-modern">Encuesta de Satisfacción de <span class="rainbow-gradient-text">Heladería</span></h2>
-        <p class="section-desc-modern">Tus datos se guardan de forma instantánea en nuestra <strong>Base de Datos</strong> y te redireccionamos al portal institucional oficial de PQR.</p>
+        <span class="section-pill">📋 Tu Opinión Cuenta</span>
+        <h2 class="section-title-modern">Encuesta de Satisfacción en <span class="rainbow-gradient-text">Base de Datos</span></h2>
+        <p class="section-desc-modern">Tus datos se guardan de forma instantánea y segura en nuestra <strong>Base de Datos</strong>.</p>
       </div>
 
       <div class="survey-wrapper-modern">
 
-        <!-- Banner Institucional con Enlace a pqr3.html -->
+        <!-- Banner Institucional Encuesta BD -->
         <div class="inst-card-modern">
           <div class="inst-card-text">
             <span class="inst-tag">🏫 IED Hernán Venegas Carrillo / SENA 2026</span>
-            <h3 class="inst-card-title">Encuesta y Radicado Oficial PQR3</h3>
+            <h3 class="inst-card-title">Encuesta con Base de Datos</h3>
             <p class="inst-card-desc">
-              Al completar esta encuesta se guardará en la <strong>Base de Datos</strong> de la heladería y te redireccionaremos automáticamente al enlace oficial institucional:
-              <strong style="color:var(--c-blue);">proyecto3/pqr3.html</strong>
+              Tus respuestas se almacenan directamente en la <strong>Base de Datos</strong> de Heladería Arcoíris (IndexedDB / MySQL local) para el proyecto formativo.
             </p>
           </div>
-          <a href="https://iedhernanvenegascarrillo.edu.co/bases2026/proyecto3/pqr3.html" target="_blank" rel="noopener noreferrer" class="btn-inst-modern">
-            <i class="fas fa-external-link-alt"></i> Ir a pqr3.html Oficial ↗
-          </a>
+          <div class="btn-inst-modern" style="cursor: default;">
+            <i class="fas fa-database"></i> Base de Datos Activa
+          </div>
         </div>
 
         <!-- Formulario Moderno de Encuesta -->
@@ -359,7 +355,7 @@
             <div class="form-group-modern">
               <label for="surveyName" class="label-modern"><i class="fas fa-user"></i> Nombre Completo <span class="req">*</span></label>
               <div class="input-modern-wrap">
-                <input type="text" id="surveyName" class="input-modern" placeholder="Ej: Daniela Gómez" required />
+                <input type="text" id="surveyName" class="input-modern" placeholder="Ej: Astrit Bautista" required />
               </div>
             </div>
 
@@ -400,31 +396,31 @@
           </div>
 
           <div class="form-group-modern">
-            <label class="label-modern">¿Cuáles son tus categorías o sabores favoritos?</label>
+            <label class="label-modern">¿Cuáles de nuestros sabores artesanales prefieres? (Puedes marcar varios)</label>
             <div class="flavor-chips-grid">
-              <div class="flavor-chip survey-flavor-chip active" data-flavor-name="Helados Artesanales">
+              <div class="flavor-chip survey-flavor-chip active" data-flavor-name="Brownie">
                 <input type="checkbox" checked />
-                <span>🍦 Helados Artesanales</span>
+                <span>🍫 Brownie</span>
               </div>
-              <div class="flavor-chip survey-flavor-chip active" data-flavor-name="Fresas con Crema">
+              <div class="flavor-chip survey-flavor-chip active" data-flavor-name="Vainilla">
                 <input type="checkbox" checked />
-                <span>🍓 Fresas con Crema</span>
+                <span>🍦 Vainilla</span>
               </div>
-              <div class="flavor-chip survey-flavor-chip" data-flavor-name="Ensalada de Frutas con Helado">
+              <div class="flavor-chip survey-flavor-chip" data-flavor-name="Vainilla Chips">
                 <input type="checkbox" />
-                <span>🥗 Ensaladas de Frutas</span>
+                <span>🍨 Vainilla Chips</span>
               </div>
-              <div class="flavor-chip survey-flavor-chip" data-flavor-name="Malteadas Cremosas">
+              <div class="flavor-chip survey-flavor-chip" data-flavor-name="Chocolate">
                 <input type="checkbox" />
-                <span>🥤 Malteadas Espumosas</span>
+                <span>🍫 Chocolate</span>
               </div>
-              <div class="flavor-chip survey-flavor-chip" data-flavor-name="Banana Split y Brownie">
+              <div class="flavor-chip survey-flavor-chip" data-flavor-name="Mandarina">
                 <input type="checkbox" />
-                <span>🍌 Banana Split &amp; Brownie</span>
+                <span>🍊 Mandarina</span>
               </div>
-              <div class="flavor-chip survey-flavor-chip" data-flavor-name="Comidas Rápidas">
+              <div class="flavor-chip survey-flavor-chip" data-flavor-name="Frutos Rojos">
                 <input type="checkbox" />
-                <span>🍔 Comidas Rápidas</span>
+                <span>🍓 Frutos Rojos</span>
               </div>
             </div>
           </div>
@@ -529,7 +525,7 @@
           </div>
 
           <button type="submit" class="btn-submit-survey-modern" id="surveySubmitBtnModern">
-            <i class="fas fa-paper-plane"></i> Guardar en Base de Datos y Redireccionar a PQR3 ↗
+            <i class="fas fa-database"></i> Guardar Encuesta en Base de Datos
           </button>
         </form>
 
@@ -538,29 +534,25 @@
   </section>
 
   <!-- =============================================
-       8. MODAL DE ÉXITO CON CUENTA REGRESIVA A PQR3
+       8. MODAL DE ÉXITO EN BASE DE DATOS
   ============================================= -->
   <div class="redirect-modal-overlay" id="redirectModalModern" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="redirect-card-modern">
       <div class="redirect-icon-ring">🎉</div>
-      <h3 class="redirect-title" id="modalTitle">¡Encuesta Guardada Exitosamente!</h3>
+      <h3 class="redirect-title" id="modalTitle">¡Encuesta Guardada en Base de Datos!</h3>
       <p class="redirect-desc">
-        Tus datos se registraron correctamente en la base de datos de <strong>Heladería Arcoíris</strong>.
-        Código: <strong id="modalSurveyCode" style="color:var(--c-pink);">ENC-XXXXXX</strong>
+        Tus datos se registraron correctamente en la base de datos de <strong>Heladería y Frutería Arcoíris</strong>.
+        Código de radicado: <strong id="modalSurveyCode" style="color:var(--c-pink);">ENC-XXXXXX</strong>
       </p>
 
       <div class="countdown-box">
-        <span class="countdown-number" id="countdownNumber">3</span>
-        <span class="countdown-text">Redirigiendo al servidor institucional en segundos...</span>
-        <span class="countdown-url">https://iedhernanvenegascarrillo.edu.co/bases2026/proyecto3/pqr3.html</span>
+        <span class="countdown-number" id="countdownNumber"><i class="fas fa-check-circle" style="color:var(--c-green); font-size:2.8rem;"></i></span>
+        <span class="countdown-text" style="color:var(--c-green); font-weight:700;">✓ Almacenado con éxito en Base de Datos</span>
       </div>
 
       <div class="redirect-buttons">
-        <button type="button" class="btn-now-redirect" id="btnNowRedirect">
-          <i class="fas fa-external-link-alt"></i> Redirigir Ahora Mismo 🚀
-        </button>
-        <button type="button" class="btn-stay-here" id="btnStayHere">
-          ✋ Quedarme aquí en la página
+        <button type="button" class="btn-now-redirect" id="btnStayHere" style="background: var(--grad-glow); border: none; width:100%;">
+          <i class="fas fa-check"></i> Aceptar y Continuar
         </button>
       </div>
     </div>
@@ -599,25 +591,98 @@
       <div class="team-grid-modern" id="equipo">
         <div class="team-card-modern tilt-3d">
           <div class="team-avatar-wrap">
-            <img src="img/Dani.jpeg" alt="Daniela Gómez" class="team-avatar" />
+            <img src="img/astrit.jpeg" alt="Astrit Bautista" class="team-avatar" />
           </div>
-          <h4 class="team-name">Daniela Gómez</h4>
-          <span class="team-role">Líder de Proyecto &amp; Atención</span>
+          <h4 class="team-name">Astrit Bautista</h4>
+          <span class="team-role" style="color:var(--c-pink); font-weight:800; font-size:0.95rem;">👑 Líder</span>
         </div>
 
         <div class="team-card-modern tilt-3d">
           <div class="team-avatar-wrap">
-            <img src="img/astrit.jpeg" alt="Astrit Gómez" class="team-avatar" />
+            <img src="img/Dani.jpeg" alt="Daniela Duarte" class="team-avatar" />
           </div>
-          <h4 class="team-name">Astrit Gómez</h4>
-          <span class="team-role">Especialista en Preparación &amp; Calidad</span>
+          <h4 class="team-name">Daniela Duarte</h4>
+          <span class="team-role" style="color:var(--c-purple); font-weight:800; font-size:0.95rem;">🎤 Presentadora</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- =============================================
-       10. CARRITO MODERNO (DRAWER LATERAL)
+       10. SECCIÓN DE CONTACTO, UBICACIÓN Y HORARIOS (ALTA VISIBILIDAD)
+  ============================================= -->
+  <section class="contact-hours-section" id="contacto">
+    <div class="container">
+      <div class="section-header-modern">
+        <span class="section-pill">📍 Ubicación &amp; Horarios de Atención</span>
+        <h2 class="section-title-modern">Visítanos en <span class="rainbow-gradient-text">Tocaima</span></h2>
+        <p class="section-desc-modern">Encuentra aquí nuestro punto de atención física, horarios oficiales y líneas de contacto directo.</p>
+      </div>
+
+      <div class="contact-hours-grid">
+        <!-- Tarjeta de Ubicación -->
+        <div class="contact-card-highlight tilt-3d">
+          <div class="contact-card-icon-wrap" style="background: linear-gradient(135deg, #FF6B35, #FFD23F);">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <span class="live-status-pill"><span class="pulse-dot"></span> Abierto Hoy</span>
+          <h3 class="contact-card-title">Punto de Atención</h3>
+          <p class="contact-card-text">
+            <strong>Heladería y Frutería Arcoíris</strong><br />
+            📍 Centro de Tocaima, Cundinamarca, Colombia<br />
+            <span style="font-size: 0.9rem; color: var(--text-muted);">A pocos pasos del parque principal</span>
+          </p>
+          <a href="https://maps.google.com/?q=Tocaima,Cundinamarca" target="_blank" rel="noopener noreferrer" class="btn-contact-action">
+            <i class="fas fa-location-arrow"></i> Ver en Google Maps ↗
+          </a>
+        </div>
+
+        <!-- Tarjeta de Horarios -->
+        <div class="contact-card-highlight tilt-3d">
+          <div class="contact-card-icon-wrap" style="background: linear-gradient(135deg, #7209B7, #F72585);">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3 class="contact-card-title">Horarios de Atención</h3>
+          <div class="hours-schedule-list">
+            <div class="schedule-row">
+              <span class="day-label">Lunes a Viernes:</span>
+              <strong class="time-label">10:00 AM - 9:00 PM</strong>
+            </div>
+            <div class="schedule-row">
+              <span class="day-label">Sábados y Domingos:</span>
+              <strong class="time-label" style="color: var(--c-pink);">9:00 AM - 10:00 PM</strong>
+            </div>
+            <div class="schedule-row">
+              <span class="day-label">Festivos:</span>
+              <strong class="time-label" style="color: var(--c-green);">10:00 AM - 10:00 PM</strong>
+            </div>
+          </div>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.8rem;">
+            🍦 ¡Servicio continuo todos los días con productos frescos!
+          </p>
+        </div>
+
+        <!-- Tarjeta de Pedidos y WhatsApp -->
+        <div class="contact-card-highlight tilt-3d">
+          <div class="contact-card-icon-wrap" style="background: linear-gradient(135deg, #25D366, #128C7E);">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <h3 class="contact-card-title">Línea de Contacto &amp; Pedidos</h3>
+          <p class="contact-card-text">
+            ¿Deseas pedir a domicilio o hacer un pedido anticipado?<br />
+            <strong>WhatsApp Oficial:</strong> <a href="https://wa.me/573134292831" target="_blank" style="color:#25D366; font-weight:800; font-size:1.15rem;">+57 313 429 2831</a><br />
+            <strong>Atención:</strong> Astrit Bautista (Líder) y Daniela Duarte (Presentadora)
+          </p>
+          <a href="https://wa.me/573134292831?text=Hola%20Heladeria%20Arcoiris,%20quisiera%20hacer%20un%20pedido%20fresco%20%F0%9F%8D%A6" target="_blank" rel="noopener noreferrer" class="btn-contact-action" style="background: #25D366;">
+            <i class="fab fa-whatsapp"></i> Escribir a WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       11. CARRITO MODERNO (DRAWER LATERAL)
   ============================================= -->
   <div class="cart-overlay-modern" id="cartOverlayModern"></div>
   <aside class="cart-drawer-modern" id="cartDrawerModern" aria-label="Carrito de compras">
@@ -642,9 +707,9 @@
   </aside>
 
   <!-- =============================================
-       11. PIE DE PÁGINA (FOOTER MODERNO)
+       12. PIE DE PÁGINA (FOOTER MODERNO)
   ============================================= -->
-  <footer class="footer-modern" id="contacto">
+  <footer class="footer-modern">
     <div class="container">
       <div class="footer-grid-modern">
         <div class="footer-brand">
@@ -653,7 +718,8 @@
             Sabor, color y frescura en cada bocado. Helados artesanales, copas y ensaladas en Tocaima, Cundinamarca.
           </p>
           <p style="font-size:0.85rem; color:#a09cb8;">
-            <i class="fas fa-envelope"></i> Contacto y Desarrollador: <strong>peleona2002@gmail.com</strong>
+            <i class="fas fa-envelope"></i> Contacto: <strong>peleona2002@gmail.com</strong><br />
+            👑 Creadoras: <strong>Astrit Bautista (Líder)</strong> y <strong>Daniela Duarte (Presentadora)</strong>
           </p>
         </div>
 
@@ -664,21 +730,21 @@
             <li><a href="#catalogo">Catálogo de Productos</a></li>
             <li><a href="#personalizador">Personalizador de Helados</a></li>
             <li><a href="#nosotros">Sobre Nosotros</a></li>
+            <li><a href="#contacto">Contacto &amp; Horarios</a></li>
             <li><a href="index.html">Versión Anterior (Antes)</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h5>PQR Institucional</h5>
+          <h5>Encuesta BD</h5>
           <ul class="footer-links-list">
-            <li><a href="https://iedhernanvenegascarrillo.edu.co/bases2026/proyecto3/pqr3.html" target="_blank" rel="noopener noreferrer">📋 pqr3.html Oficial (IED) ↗</a></li>
-            <li><a href="#encuesta">Encuesta en Base de Datos</a></li>
-            <li><a href="admin.html">Panel Admin de Encuestas</a></li>
+            <li><a href="#encuesta">📋 Llenar Encuesta BD</a></li>
+            <li><a href="admin.html">🔐 Panel Admin de Encuestas</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h5>Visítanos</h5>
+          <h5>Lugar y Horarios</h5>
           <p style="font-size:0.9rem; color:#a09cb8; line-height:1.6;">
             📍 Tocaima, Cundinamarca, Colombia<br />
             🕒 Lunes a Domingo: 10:00 AM - 9:00 PM<br />
@@ -688,8 +754,8 @@
       </div>
 
       <div class="footer-bottom-bar">
-        <span>&copy; 2026 Heladería y Frutería Arcoíris · Todos los derechos reservados.</span>
-        <span>Repositorio: <strong>peleona2002@gmail.com</strong></span>
+        <span>&copy; 2026 Heladería y Frutería Arcoíris · Creado por Astrit Bautista (Líder) y Daniela Duarte (Presentadora).</span>
+        <span>Repositorio: <strong>peleona2002-spec</strong></span>
       </div>
     </div>
   </footer>
