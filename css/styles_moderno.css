@@ -242,7 +242,7 @@ a {
 /* ---------- NAVBAR MODERNA CON BLUR ---------- */
 .navbar-modern {
   position: sticky;
-  top: 42px; /* Debajo de la diff-bar */
+  top: 0;
   z-index: 999;
   background: rgba(255, 255, 255, 0.82);
   backdrop-filter: blur(20px);
@@ -361,6 +361,29 @@ body.dark-mode .navbar-modern {
   display: flex;
   align-items: center;
   gap: 0.85rem;
+}
+
+.theme-toggle-nav {
+  background: rgba(114, 9, 183, 0.08);
+  border: 1px solid rgba(114, 9, 183, 0.18);
+  color: var(--c-purple);
+  padding: 0.55rem 0.95rem;
+  border-radius: var(--r-pill);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--trans-smooth);
+}
+
+.theme-toggle-nav:hover {
+  background: rgba(114, 9, 183, 0.16);
+  transform: translateY(-1px);
+}
+
+body.dark-mode .theme-toggle-nav {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--c-yellow);
 }
 
 .cart-btn-modern {
@@ -2034,11 +2057,51 @@ body.dark-mode .rating-caption {
 }
 
 @media (max-width: 768px) {
+  .nav-container {
+    flex-wrap: wrap;
+    padding-block: 0.6rem;
+    row-gap: 0.45rem;
+  }
+  .nav-container > nav {
+    order: 3;
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: 0;
+  }
   .nav-links-modern {
+    width: 100%;
+    min-width: 0;
+    flex-wrap: nowrap;
+    gap: 0.4rem;
+    overflow-x: auto;
+    padding-bottom: 0.2rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-links-modern::-webkit-scrollbar {
     display: none;
   }
-  .mobile-toggle {
-    display: block;
+  .nav-link-modern {
+    white-space: nowrap;
+    font-size: 0.84rem;
+    padding: 0.35rem 0.55rem;
+  }
+  .brand-name {
+    font-size: 1.15rem;
+  }
+  .brand-tag {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+  }
+  .nav-actions {
+    gap: 0.5rem;
+  }
+  .theme-toggle-nav {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.78rem;
+  }
+  .cart-btn-modern {
+    padding: 0.55rem 0.85rem;
   }
   .hero-title-modern {
     font-size: 2.6rem;
@@ -2052,4 +2115,9 @@ body.dark-mode .rating-caption {
   .footer-grid-modern {
     grid-template-columns: 1fr;
   }
+}
+
+/* Evita que el navbar sticky tape los títulos al navegar por anclas */
+section[id] {
+  scroll-margin-top: 96px;
 }

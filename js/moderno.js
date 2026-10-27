@@ -376,7 +376,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnAddCustomIceCream = document.getElementById('btnAddCustomIceCream');
 
   let customBase = { name: 'Copa de Cristal Suprema', price: 18000, icon: '🍨' };
-  let customFlavors = ['Chocolate Belga', 'Vainilla Francesa'];
+  let customFlavors = ['Brownie', 'Vainilla'];
   let customToppings = ['Fresas Silvestres', 'Crema Chantilly'];
 
   function updateCustomizerUI() {
